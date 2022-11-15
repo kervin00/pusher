@@ -34,3 +34,9 @@ window.Echo = new Echo({
     forceTLS: true,
     enabledTransports: ['ws', 'wss'],
 });
+
+var channel = window.Echo.channel('my-channel');
+channel.listen('.my-event', function(data) {
+  alert(JSON.stringify(data));
+});
+

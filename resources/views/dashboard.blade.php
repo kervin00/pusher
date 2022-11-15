@@ -14,4 +14,7 @@
             </div>
         </div>
     </div>
+    {{-- sample lang yan --}}
+
+
 </x-app-layout>
